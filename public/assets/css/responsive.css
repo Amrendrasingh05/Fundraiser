@@ -1,0 +1,736 @@
+@media only screen and (min-width:320px) and (max-width:992px){
+	body,html{ overflow-x:hidden; height:auto;}
+	.res-d-flex{ display:flex !important;}
+	.container-fluid,.container{max-width:90%;}
+	.wow{ visibility:inherit !important;}
+	.res-full{ width:100% !important; max-width:100% !important; flex:0 0 100% !important;}
+	.res-show{ display:block !important;}
+	.res-hide{ display:none !important;}
+	.resMar0{ margin-left:0px !important;}
+.res_ph{ padding:7px 15px !important;	}
+
+	.wow{animation:inherit !important;}
+	
+	header.fixed{ position:fixed !important; top:0px; left:0px; width:100%; padding-bottom:15px !important;}
+	header .container-fluid{ padding:0px;}
+	header{ padding:15px 0px; padding-top:10px; padding-bottom:0px !important;}
+	
+	header .part1{ display:flex; align-items:center;}
+	header .logo{ width:150px; position:relative;}
+	
+	nav{ position:fixed !important; top:0px; right:-100%; width:86%; height:100%; background:#fff; z-index:100000; max-height:100%;
+		 opacity:0; padding-top:15px;}
+		
+	nav.open{ right:0px; opacity:1;}	
+	
+	.close-nav {
+    display: block!important;
+    width: 35px;
+    position:absolute;
+    top: 0px;
+    left: -35px;
+    cursor: pointer;
+    background: #fff;
+    padding: 10px;
+	}
+	
+	
+	.open-nav img{filter:invert(100);}
+	header.scroll .open-nav img{filter:invert(0);}
+	.close-nav img{ width:20px !important;}
+	
+	nav ul{ position:relative !important; z-index:10000; background:#fff; max-height:85%; overflow:scroll; overflow-x:hidden;}
+	nav .btn-phone{ display:none !important;}
+	nav ul li{ width:100%; padding:0px 15px;}
+	nav ul li a{ padding:12px 0px; display:flex; color:#000 !important;	}
+	nav ul li a.btn{ color:#fff !important;}
+	.mega_menu h4 .fa{ display:block !important;}
+	nav ul li a .fa{ margin-left:auto;}
+	nav .btns{ display:flex !important; margin-top:20px; width:100%; margin-bottom:15px; position:absolute; bottom:0px; left:0px;
+	width:100%;}
+	nav .btns a{ padding:8px 25px !important; font-size:14px !important; width:40%; margin:0px 7px;}
+	
+	nav ul.list{ padding-top:0px !important;}
+	nav ul li .dropdown-menu{ position:static !important; opacity:1 !important; visibility:inherit !important; display:none !important;
+		box-shadow:none !important; min-width:100% !important; width:100% !important;}
+ 	nav ul li .dropdown-menu hr{ display:none !important;}
+	.single_lavel{ background:#fafafa !important;}	
+	.single_lavel li { border-bottom:1px solid rgba(0,0,0,0.070) !important;}
+	.single_lavel li:last-child{ border-bottom:0px !important;}
+
+	nav .dropdown-menu.show{ display:block !important;}
+	nav .mega_menu{ border-bottom:1px solid rgba(0,0,0,0.1) !important;}
+	nav .mega_menu .row{ display:block !important;}
+	nav .mega_menu .row .col{max-width:100%; border-bottom:1px solid rgba(0,0,0,0.1); padding:0px; padding-bottom:15px;}
+	nav .mega_menu .row .col img{ width:120px;}
+	.mega_menu .owl-dots{ display:block; margin-top:20px;}
+	
+	nav .dropdown-menu li{ padding:0px;}
+	
+	.mega_menu{ display:none; padding:0px !important; width:100% !important;}
+	.mega_menu .ocountry_slider { display:block;}
+	.mega_menu  .item{flex:1;}
+		
+	.mega_menu.show{ width:100% !important; padding:0px 15px!important;}	
+
+	.mega_menu  .item ul.act{ display:block;}
+	.mega_menu  .item ul li{ margin-bottom:10px !important;}
+	.mega_menu  .item h4.act{ pointer-events:none;}
+	
+	.mega_menu:after{ display:none;}
+	.mega_menu h4:before{ display:none;}
+	.mega_menu h4 a:before{ display:none !important;}
+	
+	header.scroll ul.list li{margin-top:0px !important;}
+	
+	header .part1{ display:flex; align-items:center; max-width:100%; flex:0 0 100%;}
+	
+
+	.home_section2 .part2{ padding-left:15px !important;}
+	.home_section2 .part2 .row{ padding-left:0px !important;}
+	
+	.get_in_touch .col-md-7{ padding:0px 15px !important; margin-bottom:35px; margin-top:20px;}
+	.get_in_touch .tv .screen{ width:100%;}
+	
+	.video-wrapper{ width:73%; left:13%;}
+	
+	.get_in_touch .card{ width:100%;}
+	
+	.submit-requirment-panel.open{ top:0px !important;}
+	
+	.process_wrap{ overflow-y:hidden !important; margin-top:-100px;}
+	.process_wrap::-webkit-scrollbar{ height:3px !important;}
+	.process_wrap .process{ width:975px !important; height:450px; padding-left:50px;}
+	.process::-webkit-srollbar{ display:none !important;}
+	.process li{ display:inline-block !important; width:150px}
+	.process:after{ top:44.4%;}
+	
+	.owl-nav{ display:none !important;}
+	
+	.table-responsive::-webkit-scrollbar{ height:3px !important;}
+	
+	.sitemap table td a{ font-size:12px;}
+	
+	.thankou{ width:100%;}
+	.thankou img{ width:100% !important;}
+	
+	.canada-immigration-row1 .card{ background:#fff; box-shadow:0 3px 1px -2px rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgb(0 0 0 / 12%);}
+	.canada-immigration-row1 .card:after{ width:100%; left:0px; opacity:1;}
+	.canada-immigration-row1 .card img{ width:30px !important;}
+	.canada-immigration-row1 .card h4{ margin-top:15px !important;}
+	
+	.canada-immigration-row2{ display:block !important; white-space:nowrap !important; overflow:scroll; overflow-y:hidden;}
+	.canada-immigration-row2::-webkit-scrollbar{ height:3px !important;}
+	.canada-immigration-row2::-webkit-scrollbar-track{ background:none !important;}
+	.canada-immigration-row2 .card{ display:inline-block !important; vertical-align:top; width:240px; max-width:0 0 240px; flex:0 0 240px; margin:15px 7px !important; height:180px;}
+	
+	.canada-immigration-row2 .card .overlay *{ white-space:normal;}	
+		
+	.md-stepper-horizontal{ white-space:nowrap; overflow:scroll; overflow-y:hidden; margin-top:-25px; margin-bottom:20px;}
+	.md-stepper-horizontal::-webkit-scrollbar{ height:3px !important;}
+	.md-stepper-horizontal::-webkit-scrollbar-track{ background:none !important;}
+	.md-stepper-horizontal .md-step .md-step-bar-left, .md-stepper-horizontal .md-step .md-step-bar-right{ top:40px;}
+	
+	footer .column h4{ margin-bottom:15px;}
+	footer .column h4 .fa.act{ transform:rotate(180deg);}
+	footer .column ul{ display:none;}
+	
+	
+
+	
+	.tab-sml-rounded::-webkit-scrollbar{ display:block !important; height:4px !important;}
+	
+	.testimonial_page .part1{ padding-right:15px !important;}
+	
+	.testimonial-slider-full .owl-item{ padding:0px 15px;}
+	
+	.home_pricing_section{ padding-top:0px !important;}
+	.pricing_page{ padding-top:25px !important;}
+	
+	/*
+	.pricing{ white-space:nowrap; overflow:scroll; display:block !important;}
+	.pricing::-webkit-scrollbar{ height:3px !important;}
+	.pricing .col{ display:inline-block !important; margin:0px; margin-right:10px; width:310px; max-width:310px;}
+	.pricing .col:last-child{ margin-right:0px !important;}
+	*/
+	
+	footer .footer_socials_v2 li{ width:100%;}
+	footer .column ul{ margin-bottom:0px;}
+	
+	.home_services_v2{ margin-top:0px !important;} 
+	.home_services_v2 .owl-stage-outer{ padding-top:0px !important; padding-bottom:0px !important;}
+	
+	.how_do_we_do .owl-item:before{ display:none !important;}
+	
+	.service_row2 *{ text-align:center;}
+	.set.arrow2 > a .fa{ margin-left:auto;}
+	
+	.home_row2 { padding-top:20px !important;}
+		
+		
+	.about_home2 .col-md-5{ margin-top:45px;}
+	
+	.contact .row.align-items-center{align-items:inherit !important;}
+	.contact .col-md-7 h2{ font-size:30px;}
+	
+	
+	.home-banner{ height:80vh;}
+	.home-banner .container-fluid{ padding-left:25px; padding-right:25px;}
+	
+	.home_about .btn{ margin-top:10px !important; position:relative; left:10px;}
+	
+	.small-container{ width:100% !important;}
+	.we_can_bg .small-container{ padding:30px 30px !important;}
+	.min-container{ float:none !important; margin:auto !important; width:80% !important;	}
+	.our_strength_box{ margin-left:-10px !important;}
+	
+	.our_strength_box{ margin-top:-20px !important; padding:25px !important;}
+	.small-container .heading-primary-small{ font-size:14px !important;}
+	.our_strength_box .heading3{ padding:0px !important; font-size:25px !important;}
+	
+	.tech-image-wrap{ display:none;}
+	.our_strength_box .heading3{ width:100% !important;}
+	.our_strength_box>.flex_wrapper{ padding-top:20px !important	;}
+	.strength_list{ padding:20px 0px !important;}
+	.our_strength_box .heading3 br{ display:none !important;}
+	
+	.process_{ display:block !important; overflow:scroll; white-space:nowrap;}
+	.process_::-webkit-scrollbar{ height:3px !important;}
+	.process_ *{ white-space:normal;}
+	.process_ .col-lg-4{ max-width:300px; display:inline-block; vertical-align:top; text-align:center; margin-top:0px !important;}
+	.step-desc{ padding-top:0px;}
+	
+	.protfolio-section{ display:none;}
+	
+	.inner-banner{ height:60vh;}
+	.blog_banner,.portfolio_banner{ height:60vh !important;}
+	.faq_banner{ height:50vh !important;}
+	.shape-bottom{ bottom:-2px;}
+	.service_banner{ height:100vh !important;}
+	
+	.page-404-section{ display:block; text-align:center; padding:25px 35px; padding-top:80px;}
+	
+
+
+	
+	
+}
+@media only screen and (min-width:320px) and (max-width:525px){
+	.pagination li a{ width:15px; height:15px; font-size:12px;}
+	.faq .set .content ul.lists li{ margin-bottom:10px;}
+	.hd.sml-80{ zoom:60% !important;}
+	
+		
+	.top-strip .container-fluid div.d-flex{ justify-content:left !important;}
+	
+	.contact_Location_tabs .nav::-webkit-scrollbar,.toogle_tabs::-webkit-scrollbar{ display:none !important;}
+	.contact_Location_tabs .nav,.toogle_tabs{ white-space:nowrap; overflow:scroll;}
+	.contact_Location_tabs .nav li,.toogle_tabs li{ display:inline-block; float:none;}
+	.toogle_tabs li{ margin:0px 5px !important;}
+	
+	.faq-tabs .tab-pane{ padding:0px !important;}
+	
+	.editor h3{ font-size:20px !important;}
+	.editor p{ text-align:justify;}
+	.set > a h3{ font-size:15px !important;}
+	
+	.crs-calculator-section .container{ max-width:100% !important; padding:0px !important;}
+	
+	.our-achievement-section{ padding:45px 0px !important;}
+	
+
+}
+
+
+
+
+@media only screen and (min-width:320px) and (max-width:575px){
+h2.hd{ font-size:27px; line-height:35px;}
+.res-d-block-sm{ display:block; width:max-content;}
+.hd.text-center span{ margin:auto;}
+.res-m-auto{ margin:auto !important;}
+
+	.canada-immigration-row1 .card,.canada-immigration-row2 .card{ max-width:100%; margin:15px;}
+	.payment-confirmation h3{ font-size:22px !important;}
+	.payment_method li{ width:39%;}
+	.payment_method li img{ width:100%;}
+	.payment_method a{ padding:5px 10px !important;}
+	.step {padding:0 20px 35px 50px; zoom:80%;}
+	.custom-control-label{ font-size:14px; line-height:20px;}
+	.score{ width:140px; text-align:center;}
+	.sidebar .card	h2 strong span{ display:block; width:150px; margin:auto !important;}
+	
+	@-moz-document url-prefix() {
+	.hd{ display:block !important; font-size:21px !important; transform:scale(0.9);}
+	.hd span{ display:block; height:42px; line-height:40px; width:max-content;}
+	  .hd.text-center span{ margin:auto !important;}
+	  .heading .hd{ display:block !important; font-size:21px !important; transform:scale(0.9);}
+	  .heading .hd span{ display:block; height:42px; line-height:40px; width:max-content;}
+	  .heading .hd.text-center span{ margin:auto !important;}
+	}
+
+
+	
+	footer .footer_socials_v2 li a{zoom:0.8;}
+	
+	.blog_col .img{ width:100%; margin-bottom:30px;}
+	.blog_col .col-md-8{ padding:0px 15px !important;}
+	.blog_col .col-md-4{ padding-right:0px;}
+	.blog_col .col-md-8 p{ margin-bottom:0px !important;}
+	
+	.contact_address .col-md-6:first-child{ border-right:0px !important; border-bottom:1px solid #fff; padding-bottom:15px;}
+	.contact_address .col-md-6.pl-5{ padding-left:15px !important; margin-top:15px;}
+	
+	.pricing_banner h1{ font-size:35px !important; line-height:45px !important;}
+	.pricing_banner ul li{ margin-bottom:15px !important;}
+	.pricing_page{ margin-top:0px !important;}
+	
+	.home-banner .container-fluid{ width:100% !important; max-width:100% !important;}
+	.banner .hd{ font-size:32px !important;}
+	
+	.service_row2 .bloquote .item p{ font-size:18px; line-height:25px; text-align:left;}
+	
+	
+	.achievement-box{ margin:20px auto;}
+	
+	.related .col{flex-direction:column;}
+	.related .img{ width:100%;}
+	.related .info{ margin-left:0px !important; margin-top:15px; max-width:100%; width:100%;}
+	
+	
+	.mobile-app-services{ height:250px;}
+	
+}
+
+
+@media only screen and (min-width:575px) and (max-width:767px){
+	.banner .hd{ font-size:42px !important; line-height:50px !important;}
+	
+	.our-achievement-section .row{ display:block !important; text-align:center !important;}
+	.our-achievement-section .row .col-md-6{ display:inline-block !important; vertical-align:top !important; max-width:200px; margin:25px;}
+	
+	.team-box1 .team-social li{ margin-right:5px;}
+	
+	.mobile-app-services{ height:350px;}
+
+}
+
+
+@media only screen and (min-width:320px) and (max-width:767px){
+.res-d-block{ display:block;}
+	.res-padding0{ padding:0px !important;}
+	.res-sm-hide{ display:none;}
+	.res_order1{order:1;}
+	.res_order2{order:2; margin-top:25px;}
+	
+	p.font-24{ font-size:18px !important; line-height:25px !important;}
+	p.font-20{font-size:16px !important; line-height:23px !important;}
+	p.font-18{font-size:15px !important; line-height:23px !important;}
+	p.font-16{font-size:14px !important; line-height:23px !important;}
+	.top-strip .btn{ position:relative; left:-6px;}
+	.top-strip span{ font-size:11px;}
+
+	.res-banner{ display:block !important;}
+	
+	.top-strip .col-md-10{ display:none;}
+
+	
+	.home_section2_row .col-md-9{ padding:0px !important;}
+	.home_section2_row .container-fluid{ max-width:100% !important;}
+	.home_section2_row .row{ display:block !important; flex-direction:initial !important; padding-left:0px !important; margin-top:0px !important;
+		margin-left:0px !important; margin-right:0px !important;}
+	.home_section2_row .card{ display:inline-block !important; width:49.5%; max-width:100%; margin:0px !important; border-radius:0px !important; box-shadow:none !important; border-bottom:1px solid #fff; border-right:1px solid #fff;  background:#f7f7f7; padding:15px 25px !important; padding-right:15px !important;}
+	.home_section2_row .card:nth-child(1),.home_section2_row .card:nth-child(2),.home_section2_row .card:nth-child(3),.home_section2_row .card:nth-child(4){ border-bottom:0px;}
+	.home_section2_row .card  .mover{ align-items:center;}
+	.home_section2_row .card .info{ width:70%;}
+	.home_section2_row .card .icon{ width:30%; position:relative; top:-10px;}
+	.home_section2_row p{ padding:0px 35px;}
+	.home_section2_row .card p{ display:none;}
+	.home_section2_row .card h3 span{ display:block; color:#d8600a !important; font-size:23px !important;}
+	
+	.home_section2_row .card h3{ font-size:20px !important;}
+	.home_section2_row .card img{ width:40px;}
+	
+	.home-services{ margin-top:0px !important;}
+	
+	.home_section2 .owl-item{ padding:25px 0px !important;}
+	.home_section2 .owl-item .card{ margin:0px !important;}
+	.service_card .icon{ height:108px;}
+	
+	.service_card{ padding-top:25px !important;}
+	.service_card .info{ margin-top:15px;}
+	.service_card .icon:before{transform:scale(0.7); top:-25px; left:-72px;}
+	.service_card .icon img{ width:67px !important;}
+	.service_card p{ width:90% !important; font-size:14px !important;}
+	.card.service_card{ padding:20px 0px !important;}
+	.services_section .service_card{ max-width:100%; flex:0 0 100%; margin:20px 0px; padding:35px 25px !important;}
+	
+	.testimonial .part2{ margin-top:50px;}
+	.testimonial_box p{ font-size:14px !important;}
+	
+
+	
+	footer .part1{ margin-bottom:15px;}
+	
+	footer .column { margin-bottom:0px !important;}
+	footer .part3 h4{ font-size:18px !important;}
+	
+	.custom_tab{ white-space:nowrap; overflow:scroll; overflow-y:hidden; display:block !important;}
+	.custom_tab::-webkit-scrollbar{ display:block !important; height:4px !important;}
+	.custom_tab::-webkit-scrollbar-thumb{ background:#d7600d !important;}
+	.custom_tab li{ margin:0px !important;}
+	
+	.custom_tab li{ display:inline-block !important; vertical-align:top; float:none !important;}
+	
+	footer{ padding-bottom:20px !importanr;}
+	
+	
+	
+	.main-footer .widgets-section .footer-widget{ padding-bottom:25px;}
+	
+	.page-404{ margin-top:0px;}
+	.page-404 .list .btn{ font-size:16px !important; padding:8px 25px !important;}
+	
+	.sidebar-wrap{ padding:0px 15px !important; margin-top:20px;}
+	.sidebar{ padding-left:0px !important;}
+	
+	
+	.about_appointment{ width:100%; height:auto;}
+	.about_appointment h3 br{ display:none !important;}
+	.about_appointment h3{ font-size:18px !important;}
+	.about_appointment li{ width:100%; padding-left:0px; text-align:center;}
+	.about_appointment li a{ justify-content:center;}
+	.about_appointment ul{ margin-top:20px;}
+	
+	.about_last_row .row{ padding-left:0px !important;}
+	.about_last_row .row.pl-5 .col-md-6{ max-width:50%; flex:0 0 50%;}
+	.about_last_row .row.pl-5 .col-md-6 p{ text-align:center;}
+	.about_last_row .col-md-6.pl-5{ padding-left:0px !important; margin-top:25px;}
+	
+	.about .col-md-7.pr-0{ padding-right:15px !important;}
+	
+	.editor p,.editor ul li{ font-size:15px !important; line-height:24px !important;}
+	
+	.assessment-form{ width:100%;}
+	.form .form-group .title{ font-size:12px;}
+	
+	.set > a h3{ font-size:15px; display:flex; align-items:center;}
+	.set > a h3 .fa{ margin-left:auto;}
+	
+	.author_section h2{ font-size:22px;}
+	.author_news  .card img{ width:80px;}
+	
+	.modal-dialog{ width:90%;}
+	.modal-body { padding:15px !important;}
+	
+	.client-feedback-box h2{ font-size:22px;}
+	.client-feedback-content{ padding-right:0px; width:100%;}
+	.client-feedback-content .ml-3{ margin-left:0px !important;}
+	
+	.client-feedback-box{ margin-bottom:30px;}
+	
+	.contact h2{ font-size:26px;}
+	.contact h3{ font-size:22px;}
+	.contact h4{ font-size:20px !important; zoom:1 !important;}
+	.contact h4.d-flex{font-size:16px !important; }
+		
+	.canada-immigration-row2 .card h4{ font-size:18px !important;}
+	
+	.accordion-container.rows .set{ width:90% !important;}
+	
+	.canada-immigration-row1 ~ .row .col-md-8{ margin-top:25px;}
+	
+	.getInTouchForm .row .col-md-6{ max-width:100%; flex:0 0 100%;}
+	.getInTouch form{width:100%;}
+	.getInTouch form .col-md-12{ padding:0px;}
+	.testimonial__ img{ left:-31px;}
+	.express-entry-list{ margin-bottom:25px;}
+	
+	.immigration-countries-row{ margin-top:-30px;}
+	.immigration-countries-row .col-md-6{ max-width:100%; flex:0 0 100%;}
+	.immigration-countries-box ul li { width:100%;}
+	.immigration-countries-box:last-child{ margin-bottom:0px;	}
+	.immigration-countries-box h3{ font-size:24px !important;}
+	
+	.news-img{ margin-bottom:20px;}
+	
+	.payment_gateway_list li{ margin:10px !important; width:24%;}
+	
+	.paytm{ padding-bottom:0px !important;}
+	
+	.career .part1{ margin-bottom:35px;}
+	
+	.client-feedback-box:nth-child(even) .col-md-6:first-child,.podcast-row:nth-child(even) .col-md-6:first-child{ order:2;}
+	
+	.podcast-row .col-md-6{ padding:0px 15px !important;}
+	.podcast-row .col-md-6 ul{ margin-bottom:0px !important;}
+	.video{ margin-top:0px;}
+	.step {padding:0 20px 35px 50px; zoom:80%; margin-bottom:0px;}
+	
+	.video-testimonial .podcast-row h3{ font-size:18px !important;}
+	.video-testimonial .podcast-row .col-md-6 div.pr-5{ padding-right:0px !important;}
+	
+	.steps{ max-height:300px; margin-bottom:25px;}
+	.progress__{ position:fixed; bottom:0px; left:0px; width:100%; z-index:10; top:inherit; height:25px; transform:translateY(0%);
+		border-radius:0px !important;}
+		.wow{ visibility:visible !important;}
+		
+		.canada_page_tab .custom_tab{ border-bottom:2px solid #d7600d !important;}
+		
+		#join_workshop_popup h3, #upcoming_workshop h3{ font-size:26px !important;}
+		#join_workshop_popup p.font-22{ font-size:16px !important;}
+		.modal-dialog{ max-width:95% !important;}
+		#join_workshop_popup form{ margin-top:15px !important;}
+		#join_workshop_popup .modal-body{ margin-top:-60px;}
+		#join_workshop_popup  div.text-center.mb-2{ margin-top:0px !important;}
+		
+		.testimonial-slider-full .owl-item .card{ width:95%;}
+		
+		
+		/**---safari code-----*/
+		@media screen and (-webkit-min-device-pixel-ratio:0) { 
+		 ::i-block-chrome, 		
+		  .express-entry-list{ border-right:2px solid #d7600d;}
+		  
+		  }
+		  
+		  .home_row2 .col-md-7{ padding-left:15px !important;}
+		  
+		  p.w-75{ width:100% !important;}
+		
+		.discuss_your_project{ padding:25px !important;}
+		.home_pricing_section{ padding-bottom:0px !important;}
+		
+		footer .part1,footer .part2,footer .part3,footer .part4{ padding-left:15px !important;}
+		footer .part3 h4{ display:flex; align-items:center;}
+		footer .part4{ margin-top:15px;}
+		
+		.about_home2{ padding-top:0px !important;}
+		.hd br{ display:none !important;}
+		.about_home2  .col-md-7{ padding-right:15px !important;}
+		.about_home2  .col-md-7 div.pr-5{ padding-right:0px !important;}
+		
+	.blog_col{ width:100%;}
+		
+		.blog-details{ width:100% !important;}
+		
+		.career_section .col-md-8{ padding-right:15px !important;}
+		
+		.customer_say_slider .item{flex-direction:column;}
+	.customer_say_slider .item .img{ width:100%;}
+	.customer_say_slider .item .info{ width:100%; padding:20px;}
+	.customer_say_slider .item .info *{ font-size:16px ; line-height:25px;}
+	.customer_say_slider .item .info p strong,.customer_say_slider .item .info p:last-child{ font-size:18px !important;}
+	
+	.faq_section .container-fluid{ padding:0px;}
+	.accordion-container.rows .set{ width:100% !important;}
+	
+	.service_page{ padding-top:20px !important;}
+	
+	.service_page .col-md-7{ padding-right:15px !important;}
+	.service_page .col-md-7 div.pr-5{ padding-right:0px !important;}
+	
+	.activity_row { display:block !important;}
+	.service_activity_section .col1, .service_activity_section .col3{ width:100%;}
+	.service_activity_section .col1 .box, .service_activity_section .col3 .box{ left:0px !important;}
+	.service_activity_section .col2{ display:none;}
+	.service_activity_section .activity_row .box .info{ text-align:left !important;}
+	
+	.service_activity_section .col1 .box .info{order:2;}
+	.service_activity_section .col1 .box .icon{order:1; margin-left:0px !important; margin-right:20px !important;}
+	.service_activity_section .activity_row .box{ margin-bottom:25px;}
+	.service_activity_section .activity_row .col3 .box:last-child{ margin-bottom:0px !important;}
+	.service_activity_section .activity_row .box .icon{ width:70px;}
+	
+	.service_row2{ padding:35px 0px;}
+	.service_row2 .container-fluid{ padding:0px;}
+	.service_row2 ul li{ width:140px; text-align:center; margin:5px !important; vertical-align:top;}
+	.service_row2 ul li a{ padding:20px !important;}
+	.service_row2 ul li a span{ font-size:16px !important;}
+	
+	.service_faq .col-md-7.pr-5{ padding-right:0px !important; padding-left:0px !important;}
+	.service_faq .col-md-5{ margin-top:25px;}
+	
+	.home-banner .container-fluid{ max-width:100%;}
+	
+	.blog-details { padding-top:25px !important;}
+	.blog-details h1,h1.hd,.hd.font-36{ font-size:26px !important; line-height:35px !important;}
+	
+	
+	.pl-5.res_order1{ padding-left:15px !important;}
+	
+	.res_Center{ text-align:center; justify-content:center;}
+	
+	.video__{ justify-content:center;}
+	
+		
+	.home_video_btn{ zoom:1; left:10px;}
+	
+	.tst-cricle{ display:none;}
+	
+	.testimonial-section .it-up-testimonial-innerbox{ width:90%;}
+	.main-footer .footer-info-section .info-block .inner{ margin-left:0px;}
+	
+	.main-footer .footer-bottom .nav-column{ text-align:left !important;}
+	
+	.footer-nav{ margin-top:15px;}
+	.footer-nav li{ margin-left:0px !important; margin-right:15px;}
+	
+	.cd-gallery li{ width:100% !important; margin:15px 0px !important;}
+	
+	.cd-tab-filter-wrapper,.cd-tab-filter{ z-index:1000;}
+	.cd-tab-filter{ width:250px;}
+	.cd-tab-filter ul,.cd-tab-filter a{ width:100%; font-weight:600 !important;}
+	.cd-tab-filter a.selected{ color:#fff !important;}
+	
+	.cd-tab-filter a{ line-height:35px;}
+	
+	.cd-tab-filter-wrapper{ margin-bottom:40px !important;}
+	
+	
+	
+
+}
+
+
+
+
+@media only screen and (min-width:320px) and (max-width:850px){
+	.fixed_payment_card{ margin-top:15px;}
+}
+
+@media only screen and (min-width:575px) and (max-width:767px){
+	nav{ width:50%;}
+	.about_appointment li{ width:45% !important;}
+	.assessment-form .row .col-md-3{ max-width:40%; flex:0 0 40%;}
+	.assessment-form .row .col-md-9{ max-width:60%; flex:0 0 60%;}
+	.getInTouch form .col-md-12{ max-width:100%; flex:0 0 100%; padding:0px 15px !important;}
+	
+	.canada-immigration-row1 .card,.canada-immigration-row2 .card{ max-width:45%; flex:0 0 45%; margin:10px;}
+	.home_section2_row .card h3 span{ display:block; color:#d8600a !important; font-size:30px !important;}
+	
+	.fixed_bottom_mobile .btn{ padding:10px 45px !important;}
+	
+	.blog_col .img{ width:100%; margin-bottom:30px; padding-right:0px !important;}
+	.blog_col .col-md-8{ padding:0px 25px !important;}
+	.blog_col .col-md-8 p{ margin-bottom:0px !important;}
+	.blog_col .col-md-4{ padding-right:0px;}
+	.blog_col .img{ height:180px; margin-bottom:0px;}
+}
+
+@media only screen and (min-width:767px) and (max-width:992px){
+
+	.res-banner{ display:none !important;}
+	
+	.top-strip .col-md-2{max-width:100%; flex:0 0 100%;}
+	.top-strip .col-md-10{ display:none;}
+	
+	nav{ width:40%;}	
+	footer .footer_socials li a{ width:30px !important; height:30px !important;}
+	footer .part1,footer .part2,footer .part3,footer .part4{ max-width:100%; flex:0 0 100%; padding-left:15px !important; margin-bottom:0px !important;}
+	footer h4{ display:flex;}
+	footer .column{ margin-bottom:30px !important;}
+	
+	.author_news .col-md-4{ max-width:50%; flex:0 0 50%;}
+	.author_section .col-md-4 img{ width:100%;}
+	.assessment-form{ width:90%;}
+	
+	.canada-immigration-row1 .card,.canada-immigration-row2 .card{ max-width:30%; flex:0 0 30%; margin:10px;}
+	
+	.accordion-container.rows .set{ width:100%; margin-bottom:0px;}
+	
+	.express-entry-list li a{ font-size:14px;}
+	.immigration-countries-box ul li{ width:100%;}
+	.sidebar{ display:block !important;}
+	.fixed_payment_card{ margin-top:0px !important;}
+	.fixed_payment_card h3{ font-size:18px !important;}
+	.fixed_payment_card p{ font-size:15px !important;}
+	.term-condition .sidebar li a{ font-size:14px;}
+	
+	
+	.fixed_bottom_mobile .btn{ padding:10px 45px !important;}
+	
+	
+	.blog_col .img{ width:100%; margin-bottom:30px; padding-right:0px !important;}
+	.blog_col .col-md-8{ padding:0px 25px !important;}
+	.blog_col .col-md-8 p{ margin-bottom:0px !important;}
+	.blog_col .col-md-4{ padding-right:0px;}
+	.blog_col .img{ height:180px; margin-bottom:0px;}
+	
+	.service_row2{ padding:35px 0px;}
+	.service_row2 .container-fluid{ padding:0px;}
+	.service_row2 ul li{ width:160px; text-align:center; margin:5px !important; vertical-align:top;}
+	.service_row2 ul li a{ padding:20px !important; height:150px;}
+	.service_row2 ul li a span{ font-size:16px !important;}
+
+	.home_about .col-md-5,.service_page .col-md-5{ display:none;}
+	.home_about .col-md-7,.top-strip .col-md-10{ max-width:100%; flex:0 0 100%;}
+	
+	
+	
+	.flex_col{flex-direction:column;}
+	.flex_col .col-sm-6,.service_page .col-md-7{ max-width:100%; flex:0 0 100%;}
+	
+	.customer_say_slider .item .img{ width:40%;}
+	.customer_say_slider .item .info{ width:60%;}
+	.customer_say_slider .item .info *{ font-size:18px; line-height:26px;}
+	
+	.career_section  .col-md-8{ padding-right:15px !important;}
+	.career_section  .col-md-4{ display:none;}
+	
+	.blog_col { align-items:inherit !important;}
+	.blog_col .col-md-4{ position:relative; top:6px;}
+	.blog-details{ width:85% !important;}
+	
+	
+	
+}
+
+@media only screen and (min-width:575px) and (max-width:992px){
+	
+	
+	.submit-requirment-panel{ width:300px !important; right:-300px;}
+	.top-strip .btn{ position:relative; left:0px;}
+	.about_appointment{ width:100% !important;}
+	
+		
+	.blog_col { align-items:inherit !important;}
+	.blog_col .col-md-4{ position:relative; top:6px;}
+	.blog-details{ width:85% !important;}
+	
+}
+
+@media only screen and (min-width:850px) and (max-width:992px){
+	.home-banner .col-md-8{ max-width:60% !important; flex:0 0 100% !important; padding:}
+
+}
+
+
+@media only screen and (min-width:650px) and (max-width:800px){
+	.sidebar-wrap{ padding-right:0px !important;}
+	.sidebar{ display:flex;}
+	.sidebar{ display:block !important; padding-left:0px !important;}
+	.about .part1,.sidebar-wrap, .about .part2{ max-width:100%; flex:0 0 100%; padding-left:0px !important;}
+	
+	.services_section .service_card{ max-width:45%; flex:0 0 45%; margin:20px 10px; padding:35px 25px !important;}
+	
+}
+
+
+@media only screen and (min-width:800px) and (max-width:992px){
+	.about .part1{ max-width:100%; flex:0 0 100%; margin-bottom:15px;}
+	.sidebar-wrap{  max-width:100%; flex:0 0 100%; display:flex; padding-left:15px !important; width:100%;}
+	.sidebar{ width:100%; padding-left:0px !important; display:flex;}
+	.about .part2{max-width:100%; flex:0 0 100%; padding-left:0px !important;}
+	.services_section .service_card{ max-width:45%; flex:0 0 45%; margin:20px 10px; padding:35px 25px !important;}
+		
+	.blog-details{ width:90% !important;}
+}
+
+@media only screen and (min-width:320px) and (max-width:475px){
+.service_tab{ white-space:nowrap; overflow:scroll; display:block !important; width:280px;}
+	.service_tab::-webkit-scrollbar{ display:none !important;}
+	.service_tab li{ display:inline-block !important; vertical-align:top;}
+	.service_tab a{ font-size:13px; padding:8px 15px;}
+
+}

@@ -1,0 +1,8 @@
+.select2{
+  background: #E9DDCA !important;
+  
+}
+
+.error{ box-sizing: border-box; border: 1px solid #F30606 !important;}
+.error_msg{ font-size:11px; text-align:right; color: #FC0808; position:absolute; font-weight:500;}
+

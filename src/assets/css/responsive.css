@@ -1,0 +1,260 @@
+@media only screen and (min-width:320px) and (max-width:992px){
+	body,html{ overflow-x:hidden; height:auto;}
+	.res-d-flex{ display:flex !important;}
+	.container-fluid,.container{max-width:100% !important;}
+	
+	.res-padding0{ padding:0px !important;}
+	
+	.res-full{ width:100% !important; max-width:100% !important; flex:0 0 100% !important;}
+	.res-show{ display:block !important;}
+	.res-hide{ display:none !important;}
+	.resMar0{ margin-left:0px !important;}
+	
+	.font-32{ font-size:28px !important;}
+	.font-22{ font-size:20px !important;}
+	.font-18,.font-20{ font-size:16px !important; line-height:27px;}
+	.font-16{ font-size:14px !important; line-height:25px;}
+	
+	.res_bg_none{ background:none;}
+	
+.nav-icon1 {
+  width: 31px;
+  height: 30px;
+  position: relative;
+  margin: 7px auto;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+  float:right;
+    position:relative; top:10px;
+	z-index:10000000;
+}
+
+.nav-icon1 span{
+  display: block;
+  position: absolute;
+  height: 2px;
+  width:25px;
+  background: #000;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+
+}
+
+.nav-icon1 span:nth-child(1) {
+  top: 7px;
+}
+
+.nav-icon1 span:nth-child(2) {
+  top: 15px;
+}
+
+.nav-icon1 span:nth-child(3) {
+  top: 23px;
+}
+
+.btn-lg {
+    font-size: 15px;
+    padding: 7px 20px;
+}
+
+
+header{ padding:10px 0px; top:0px; left:0px; width:100%; z-index:10000;}
+header .logo{ width:140px;}
+header.scroll{ background:#fff; padding:10px 0px; box-shadow:0 1px 3px rgb(0 0 0 / 6%), 0 1px 2px rgb(0 0 0 / 12%);}
+header .row .col-md-3{ max-width:100%; flex:0 0 100%;}
+.home_banner{ padding-top:100px;}
+.home_banner .col-md-8{ margin-left:0px !important;}
+
+.home_banner .box{ padding:20px 52px;}
+.home_banner .box h1{ font-size:26px; line-height:45px;}
+
+nav{ display:none;}
+
+.fixed_nav{ padding-top:30px; max-height:100vh; overflow:scroll; overflow-x:hidden; width:100%;}
+.fixed_nav .btn{ font-size:15px;}
+.fixed_nav .user_Des{ flex-direction:row; align-items:center;}
+.fixed_nav .user_Des h3{ margin-left:15px; margin-bottom:0px;}
+.after_login_circle{ width:60px; height:60px;}
+.fixed_nav .user_Des h3{ font-size:20px;}
+.fixed_nav .menu{ zoom:75%;}
+
+
+.fixed_nav .drop{ padding-top:105px; position:fixed; height:100%;}
+
+.top_socials{ display:none;}
+
+.fixed_nav .back .ti{ font-size:25px;}
+
+.home_banner .box .line2, .testimonial .line2{ right:-9px;}
+
+.hd,.hd-lg{ font-size:25px !important; line-height:40px !important;}
+
+.how_it_works{ height:auto; margin-top:0px !important; padding:40px 0px; background:#ecf7ff; width:100% !important;}
+.owl-dots{ position:static;}
+.how_do_we_do{ width:100% !important;}
+.how_do_we_do .owl-item{padding: 0px 3px !important;}
+.how_do_we_do li .info h4{ font-weight:600; font-size:18px !important;}
+
+.testimonial .slider_wrap .owl-item{ padding:5px 3px !important;}
+.testimonial .slider_wrap .card{box-shadow: 0px 3px 6px rgb(0 0 0 / 20%) !important;}
+
+.home_section4 .left{ padding:20px !important;}
+.home_section4 .box{ width:100%; top:0px;}
+
+.home_section4 .col-md-5{ padding-right:0px;}
+
+.home_section5 { background:#ecf7ff; margin-top:25px;}
+.home_section5 .hd{ margin-top:0px !important;}
+
+.testimonial .rounded-circle, .happy_family .rounded-circle, .about_row4 .rounded-circle{ width:150px; height:150px;}
+
+.videos_slider{ width:100% !important; margin:auto;}
+
+.videos_slider .box{width: 100% !important;}
+
+.newsletter{ padding-top:0px;}
+.newsletter .box .card{ width:92.4% !important; margin:auto;}
+
+footer .col1,footer .col2,footer .col3,footer .col4{ max-width:100%; width:100%; flex:0 0 100%; margin-bottom:25px; padding:0px 20px !important;}
+footer .col4{ margin-bottom:0px;}
+footer h3{ font-size:20px;}
+
+footer ul{ margin-bottom:0px;}
+
+.inner_banner{margin-top: -30px !important;}
+
+.about_slider.owl-carousel .owl-nav{ display:none;}
+.about_slider.owl-carousel .owl-dots{ position:static; margin-top:25px !important;}
+
+.about_row2 .col-md-5{ padding:0px 20px !important;}
+
+.about_row2{ padding-top:0px !important; border-left:0px;}
+
+
+.about_slider2{width: 100% !important;}
+.about_slider2 .owl-dots{ position:static;}
+
+
+.about_testimonials{ background:#fff1da !important; margin-bottom:25px;}
+.about_testimonials .owl-carousel{ max-width:100% !important;}
+.about_testimonials{ padding:38px 0px;}
+
+.about_row3{ padding-top:0px;}
+
+.about_row4 .img{ margin-top:30px;}
+
+.about_row4 .img a, .img_big a{ width:max-content; text-align:center;}
+.about_row4 .box{ padding:30px !important;}
+
+.about_row6 { padding-top:0px !important; padding-bottom:0px !important;}
+
+.virtual_fundraising_banner .left_box{ margin-left:0px; padding:20px;}
+.virtual_fundraising_banner .left_box .cardBox{ padding:25px;}
+.virtual_fundraising_banner .left_box .cardBox:before {
+    width: 60px;
+    height: 60px;
+    top: -14px;
+    right: -14px;
+}
+
+.res_scroll{ display:block !important; white-space:nowrap; overflow:scroll; overflow-y:hidden;}
+.res_scroll::-webkit-scrollbar{height: 5px !important;}
+.res_scroll .col{ display:inline-block !important; vertical-align:top; max-width:200px; margin-bottom:25px;}
+.res_scroll .col *{ white-space:normal;}
+.res_scroll .col .info{ margin-left:0px !important; margin-top:10px;}
+
+.event_section{ padding-bottom:0px; padding-top: 30px;}
+.event_section h3{ line-height:28px !important;}
+.event_section .col-md-6{padding-left:20px !important ;}
+
+.job a{ font-size:14px;}
+
+.login_wrap{ height:100vh;}
+.login_wrap .login_logo{ position:static; margin-bottom:20px;}
+.we-are-here{ padding-top:60px;}
+
+.after_login{ height:auto;}
+.after_login .events{ padding-top:45px;}
+
+.after_login .events .event_wrap .event{ margin-bottom:30px;}
+.fixed_nav .menu{ max-height:inherit;}
+
+.step{ padding-top:35px !important;}
+.step .order1{ order:1; padding-left:15px !important;}
+.step .order2{ order:2; margin-top:-190px; margin-bottom:50px;}
+.back_step {
+    position: absolute;
+    top: 18px !important;
+    left: 10px !important;
+}
+
+.progresscontainer .form-page{ padding:20px !important;}
+.progresscontainer .form-page h3{ font-size:20px !important; line-height:30px !important;}
+
+}
+
+
+@media only screen and (min-width:320px) and (max-width:550px){
+	.newsletter .box{ height:auto; padding:30px 0px;}
+	.newsletter .box .card{ flex-direction:column !important; top:0px;}
+	.newsletter input,.newsletter .btn,.newsletter .form-group{ width:100% !important;}
+	.newsletter .btn{ margin-top:15px;}
+	
+
+	.about_slider2 .owl-stage-outer{ overflow:hidden;}
+	
+	.login_wrap .login_box{ width:90%; margin:auto;}
+	
+	.fund .font-18{ font-size:14px !important; line-height:25px !important;}
+	.fund div.d-flex.align-items-center h4,.fund div.d-flex.align-items-center div,.payout div.d-flex{ display:block !important;}
+	.fund div.d-flex.align-items-center h4 span,.fund div.d-flex.align-items-center div span,.payout div.d-flex span{ display:block; width:100%;}
+	
+	.payout div.d-flex span{ width:100% !important;}
+	.payout div.d-flex a{ margin-left:0px !important;}
+	.payout .col2{ padding-left:15px !important; margin-top:25px;}
+	.payout .col2 h3{ display:block !important;}
+	.payout .col2 h3 a{ font-size:14px !important; line-height:25px;}
+	
+	.radio_btns li label{ font-size:12px;}
+	
+}
+
+@media only screen and (min-width:550px) and (max-width:990px){
+	.fixed_nav{ width:400px;}
+	.payout .col2{ padding-left:15px !important; margin-top:25px;}
+	.payout .col2 h3{ display:block !important;}
+	.payout .col2 h3 a{ font-size:14px !important; line-height:25px;}
+
+}
+
+@media only screen and (min-width:450px) and (max-width:992px){
+.home_banner .box h1{ font-size:32px; line-height:55px;}
+.home_banner .box{ text-align:left;}
+}
+
+
+
+@media only screen and (min-width:320px) and (max-width:767px){
+	.copyright .container-fluid{ flex-direction:column;}
+	.copyright .container-fluid p{ margin:auto;}
+}
+
+@media only screen and (min-width:767px) and (max-width:992px){
+	.step .order2{margin-top:0px; }
+}

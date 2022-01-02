@@ -1,0 +1,6 @@
+export const USER_LOCAL_STORAGE_KEY = "UserInfo";
+
+export const USER_AUTH_LOGIN_REQUEST = "USER_AUTH_REQUEST";
+export const USER_AUTH_LOGIN_SUCCESS = "USER_AUTH_SUCCESS";
+export const USER_AUTH_LOGIN_FAIL = "USER_AUTH_FAIL";
+export const USER_LOGOUT = "USER_LOGOUT";
