@@ -1,5 +1,4 @@
-// export const BASE_URL = "https://api.loginlegacy.com/api/v1/";
-// export const BASE_URL = "https://api.loginlegacy.com/api/v1/";
+
 // export const BASE_URL = "https://api.cigarsforcharity.com/api/v1/";
 export const BASE_URL = "http://localhost:3009/api/v1/";
 

@@ -51,9 +51,9 @@ const Footer = ({ history }) => {
           <div className="notification_bar mt-5">
             <p className="mb-0 text-white font-16 text-center">
               To receive the earnings from fundraiser Add aPayment method by{" "}
-              <Link to="/" className="border-effect text-white font-w-600">
+              <a href="/" className="border-effect text-white font-w-600">
                 Clicking Here
-              </Link>
+              </a>
             </p>
           </div>
 
@@ -192,12 +192,12 @@ const Footer = ({ history }) => {
                   <div className="d-flex align-items-center mb-3">
                     <span className="d-block w-50">Payout Method</span>
                     <span className="d-block w-50 d-flex align-items-center ">
-                      <Link
+                      <a
                         className="font-w-600 ml-auto border-effect link font-16"
-                        to="/"
+                        href="/"
                       >
                         Add Payment Method
-                      </Link>
+                      </a>
                     </span>
                   </div>
 

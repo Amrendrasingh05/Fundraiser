@@ -90,12 +90,12 @@ const Footer = ({ history }) => {
 
         <ul className="menu">
           <li>
-            <Link to="/event" className="d-flex align-items-center">
+            <a href="/event" className="d-flex align-items-center">
               <span className="mr-2">
                 <img alt="" src={dashboard} />
               </span>{" "}
               Organizer Dashboard
-            </Link>
+            </a>
           </li>
           <li>
             <a
@@ -250,9 +250,9 @@ const Footer = ({ history }) => {
         <div className="container-fluid">
           <div className="row">
             <div className="col-md-3">
-              <Link to="/">
+              <a href="/">
                 <img src={logo} alt="" />
-              </Link>
+              </a>
             </div>
 
             <div className="col-md-9 d-flex align-items-center">

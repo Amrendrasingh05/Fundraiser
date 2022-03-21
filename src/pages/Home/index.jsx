@@ -43,7 +43,7 @@ const Home = ({ history }) => {
 					<span className="line"></span>
 					<h1 className="hd"><strong className="line_border">Fundraise</strong> from anywhere.</h1>
 					<p className="font-20 mt-3 mb-4">Fundraise with your team, sell ultra-premium cigars, and earn 50% profit. No fundraising minimums or fees.</p>					
-					<Link to="/" className="btn btn-dark btn-lg">Get Started</Link>
+					<a href="/" className="btn btn-dark btn-lg">Get Started</a>
 					<img src={line} className="line2" alt=""/>
 				</div>
 			</div>

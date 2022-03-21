@@ -36,7 +36,7 @@ const reducer = (state = initialState, action) => {
       return {
         ...state,
         loading: false,
-        user: action.response.data,
+        user: action.response,
         error: false,
         success: true,
         ismobotp: false,
@@ -84,7 +84,7 @@ const reducer = (state = initialState, action) => {
         ...state,
         loading: false,
         error: false,
-        user: action.response.data,
+        user: action.response,
         success: true,
         ismobotp: false,
         isEmail: false,
@@ -102,7 +102,7 @@ const reducer = (state = initialState, action) => {
         loading: false,
         error: false,
         success: true,
-        user: action.response.data,
+        user: action.response,
       };
 
     case types.USER_DETAIL_FAILED:

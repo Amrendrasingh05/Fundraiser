@@ -442,9 +442,9 @@ const Footer = ({ history }) => {
         <div className="container-fluid">
           <div className="row">
             <div className="col-md-3">
-              <Link to="/">
+              <a href="/">
                 <img src={logo} alt="" />
-              </Link>
+              </a>
             </div>
 
             <div className="col-md-9 d-flex align-items-center">

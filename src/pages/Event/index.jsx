@@ -91,12 +91,12 @@ const Footer = ({ history }) => {
                       </li>
                     </ul>
 
-                    <Link
+                    <a
                       className="cursor link font-14"
-                      to={`/event/details/${e._id}`}
+                      href={`/event/details/${e._id}`}
                     >
                       Event Details & Breakdown
-                    </Link>
+                    </a>
                   </div>
                 );
               })}

@@ -11,9 +11,7 @@ import { Link } from "react-router-dom";
 const Home = ({ history }) => {
   let Toekn = localStorage.getItem('fr_token');
   
-  if(Toekn!=undefined && Toekn!="" && Toekn !=null ){
-    window.location.href = "/event";
-  }
+ 
   const [Mobile, setMobile] = useState("");
   const [MobileError, setMobileError] = useState("");
 
@@ -46,8 +44,15 @@ const Home = ({ history }) => {
     ismailOtp,
     IsName,
   } = useSelector((state) => state.user);
-  
 
+  if(user!=undefined && Toekn!="" && Toekn !=null ){
+    if(user.details.is_full_register==true){
+window.location.href = "/event";
+    }
+    
+  }
+  
+  console.log(user);
   const dispatch = useDispatch();
 
   const OpenCode = ()=>{
@@ -147,7 +152,7 @@ const Home = ({ history }) => {
     <>
       <ToastContainer />
       <section className="login_wrap d-flex align-items-center justify-content-center flex-column">
-      <Link to="/" > <img src={logo} className="login_logo" alt="" /> </Link>
+      <a href="/" > <img src={logo} className="login_logo" alt="" /> </a>
         <div
           className="card login_box"
           style={isphone == false ? HideClass : blockClass}

@@ -59,7 +59,7 @@ const Footer = ({ history }) => {
 
   const [IsSubOrg, setIsSubOrg] = useState("No");
   const [SelectedParticants, setSelectedParticants] = useState("");
-
+ const [SubOrmEmailError,setSubOrmEmailError] = useState("");
   const [fields, setFields] = useState([{ value: null }]);
 
   function handleChange(i, event) {
@@ -166,6 +166,39 @@ const Footer = ({ history }) => {
 
   const saveIsSub = (event) => {
     event.preventDefault();
+    console.log(fields);
+    if(IsSubOrg=='Yes'){
+      let CheckAllFiels = []
+      let CheckEail = [];
+      fields.map((e,i)=>{
+        if(e.value==''){
+          CheckAllFiels.push(e.value)
+        }else{
+          let re =/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+        if(!re.test(e.value)){
+          CheckEail.push(e.value) 
+        }
+        }
+        
+      })
+      if(CheckAllFiels.length>0){
+        setSubOrmEmailError('Sub Org email are required')
+        return
+      }
+      else{
+        setSubOrmEmailError('')
+      }
+      if(CheckEail.length>0){
+        setSubOrmEmailError('Sub Org email format is not correct')
+        return
+      }else{
+        setSubOrmEmailError('')
+      }
+    
+   
+    }
+    console.log(fields);
+    
     dispatch(
       actions.teamSubOrgRequest({
         categoryId: categoryId,
@@ -218,7 +251,11 @@ const Footer = ({ history }) => {
 
   const saveEvents = (event) => {
     event.preventDefault();
-    console.log("sadsad");
+   
+    let Allemails = []
+    fields.map((e,i)=>{
+      Allemails.push(e.value);
+    })
     dispatch(
       actions.savefundDetails({
         TeamName: teamName,
@@ -230,7 +267,7 @@ const Footer = ({ history }) => {
         TeamMember: SelectedParticants,
         IsSubOrg: IsSubOrg == "Yes" ? true : false,
         SubOrgEmail:
-          IsSubOrg == "Yes" ? ["demo@yopmail.com", "demo1@yopmail.com"] : [],
+          IsSubOrg == "Yes" ? Allemails : [],
         history,
       })
     );
@@ -483,7 +520,7 @@ const Footer = ({ history }) => {
                                   onChange={(e) => handleChange(idx, e)}
                                 />
                                 
-                                <span onClick={() => handleRemove(idx)} class="close">&times;</span>
+                                <span onClick={() => handleRemove(idx)} className="close">&times;</span>
                                 
                               </div>
                             );
@@ -509,6 +546,9 @@ const Footer = ({ history }) => {
                       >
                         Add Email
                       </button>
+                      <div className="error_msg">
+                          {SubOrmEmailError != "" ? SubOrmEmailError : ""}
+                        </div>
                       </div>
 
                       <br></br>

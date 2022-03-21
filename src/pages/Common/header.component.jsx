@@ -37,24 +37,24 @@ const Header = () => {
     <>
       <ul className="top_socials">
         <li>
-          <Link to="/">
+          <a href="/">
             <i className="ti ti-facebook"></i>
-          </Link>
+          </a>
         </li>
         <li>
-          <Link to="/">
+          <a href="/">
             <i className="ti ti-instagram"></i>
-          </Link>
+          </a>
         </li>
         <li>
-          <Link to="/">
+          <a href="/">
             <i className="ti ti-twitter"></i>
-          </Link>
+          </a>
         </li>
         <li>
-          <Link to="/">
+          <a href="/">
             <i className="ti ti-linkedin"></i>
-          </Link>
+          </a>
         </li>
       </ul>
 
@@ -76,12 +76,12 @@ const Header = () => {
           className="d-flex align-items-center"
           style={{ marginTop: "65px", marginBottom: "35px" }}
         >
-          <Link to="/login" className="btn btn-dark w-50">
+          <a href="/login" className="btn btn-dark w-50">
             Login
-          </Link>
-          <Link to="/login" className="btn btn-border w-50 ml-3">
+          </a>
+          <a href="/login" className="btn btn-border w-50 ml-3">
             Sign up
-          </Link>
+          </a>
         </div>
 
         <br></br>
