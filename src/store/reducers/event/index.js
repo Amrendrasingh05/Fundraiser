@@ -11,7 +11,8 @@ const initialState = {
     isDate: false,
     teamMember: false,
     EventAdded: false,
-    event_id: []
+    event_id: [],
+    funds: []
 };
 
 const reducer = (state = initialState, action) => {
@@ -219,6 +220,53 @@ const reducer = (state = initialState, action) => {
 
         case types.FUND_DELETE_FAILED:
             return { ...state, loading: true, error: '' };
+
+
+
+        case types.FUND_REQUEST:
+            return { ...state, loading: true, error: '' };
+
+        case types.FUND_RESPONSE:
+            return {
+                ...state,
+                loading: false,
+                funds: action.response.data,
+                error: false,
+                success: true
+            };
+        case types.FUND_FAILED:
+            return { ...state, loading: false, error: action.error };
+
+
+        case types.ADD_CART_REQUEST:
+            return { ...state, loading: true, error: '' };
+
+        case types.ADD_CART_RESPONSE:
+            return {
+                ...state,
+                loading: false,
+                data: action.response.data,
+                error: false,
+                success: true
+            };
+        case types.ADD_CART_FAILED:
+            return { ...state, loading: false, error: action.error };
+
+
+
+            case types.GET_CART_REQUEST:
+                return { ...state, loading: true, error: '' };
+    
+            case types.GET_CART_RESPONSE:
+                return {
+                    ...state,
+                    loading: false,
+                    data: action.response.data,
+                    error: false,
+                    success: true
+                };
+            case types.GET_CART_FAILED:
+                return { ...state, loading: false, error: action.error };
 
         default:
             return state;

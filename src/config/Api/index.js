@@ -7,6 +7,10 @@ export const BASE_URL = "http://localhost:3009/api/v1/";
 export const ADMIN_BASE_URL = "http://localhost:3009/admin/api/v1/";
 
 
+export const IMAGE_URL = "http://localhost:3009/static_file/";
+
+
+
 
 // export const BASE_URL =
 //   'http://ec2-13-233-89-35.ap-south-1.compute.amazonaws.com/';

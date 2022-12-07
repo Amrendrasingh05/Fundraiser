@@ -109,4 +109,76 @@ export const teamNameRequest = (data) => ({
     type: types.FUND_DELETE_RESPONSE,
     response,
   })
+
+
+  export const  getProductfailed=(response)=>({
+    type: types.GET_PRODUCT_FAILED,
+    response,
+  })
+
+
+  export const getProductRequest = (data) => ({
+    type: types.GET_PRODUCT_REQUEST,
+    data
+  });
+
+
+  export const  getProductResponse=(response)=>({
+    type: types.GET_PRODUCT_RESPONSE,
+    response,
+  })
+
+
+  export const getFundsRequest = (data) => ({
+    type: types.FUND_REQUEST,
+    data
+  });
+
+
+  export const  getFundsResponse=(response)=>({
+    type: types.FUND_RESPONSE,
+    response,
+  })
+
+  
+  export const  getFundsFaild=(response)=>({
+    type: types.FUND_FAILED,
+    response,
+  })
+
+
+  export const addCartRequest = (data) => ({
+    type: types.ADD_CART_REQUEST,
+    data
+  });
+
+
+  export const  addCartResponse=(response)=>({
+    type: types.ADD_CART_RESPONSE,
+    response,
+  })
+
+  
+  export const  addCartFaild=(response)=>({
+    type: types.ADD_CART_FAILED,
+    response,
+  })
+
+
+  export const getCartRequest = (data) => ({
+    type: types.GET_CART_REQUEST,
+    data
+  });
+
+
+  export const getCartResponse=(response)=>({
+    type: types.GET_CART_RESPONSE,
+    response,
+  })
+
+  
+  export const  getCartFaild=(response)=>({
+    type: types.GET_CART_FAILED,
+    response,
+  })
   

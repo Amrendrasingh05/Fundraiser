@@ -12,6 +12,16 @@ import about_row6 from '../../assets/images/about_row6.jpg'
 import about_row3 from '../../assets/images/about_row3.jpg'
 import about_row5 from '../../assets/images/about_row5.png'
 import home_banner_shape from '../../assets/images/home_banner_shape.svg'
+import Eight from '../../assets/images/product/8.jpg';
+
+import Nine from '../../assets/images/product/6.jpg';
+
+import Nine1 from '../../assets/images/product/6.jpg';
+import Nine2 from '../../assets/images/product/7.jpg';
+import Nine3 from '../../assets/images/product/8.jpg';
+import Nine4 from '../../assets/images/product/9.jpg';
+
+
 
 
 const About = ({ history }) => {
@@ -42,12 +52,8 @@ const About = ({ history }) => {
 		<div className="row align-items-center">
 			<div className="col-md-5 pl-5 pr-5">
 				<p className="font-14 text-justify">
-					Located in Chicagoland and popping 15,000 pounds of handmade, ultra-premium popcorn every day, Double Good is a community of like-minded dreamers, doers, believers, and thinkers committed to helping kids do what they love. Tim Heitmann started his popcorn business in 1998 selling to national retailers,<br></br>
-<br></br>
- but he quickly realized the demands of big business didn’t line up with his desire to create joy and help others. When he began offering fundraising opportunities for kids in 2003, the future of the company completely changed.<br></br>
-<br></br>
- Tim began receiving letters from young athletes who said the popcorn helped them purchase new uniforms or pay for travel to their team’s championships. They told him that everyone who supported them loved the popcorn. These stories changed the way he looked at what he was doing, and he wanted to do it for more kids.
-
+				<h2 className="hd font-w-600 font-30">Who we<span className="line_border">are</span></h2>
+				CHARITIZE aims to provide a vehicle through which non-profit and charitable community-based organizations and clubs can meet their fundraising goals through online campaigns that are optimized for usability, efficiency, competition among fundraisers, and seamless integration of data and metrics.  We specialize in online fundraising logistics, product distribution and technical support.
 				</p>
 			</div>
 			
@@ -55,19 +61,19 @@ const About = ({ history }) => {
 			<div className="col-md-7" style={{"overflow":"hidden"}}>
 				<div className="owl-carousel owl-theme about_slider2">
 					<div className="item">
-						<img src={about_img1} alt="" className="w-100"/>
+						<img src={Nine1} alt="" className="w-100"/>
 					</div>
 					
 					<div className="item">
-						<img src={about_img2} alt="" className="w-100"/>
+						<img src={Nine2} alt="" className="w-100"/>
 					</div>	
 					
 					<div className="item">
-						<img src={about_img1} alt="" className="w-100"/>
+						<img src={Nine3} alt="" className="w-100"/>
 					</div>
 					
 					<div className="item">
-						<img src={about_img2} alt="" className="w-100"/>
+						<img src={Nine4} alt="" className="w-100"/>
 					</div>										
 				</div>
 			</div>
@@ -154,7 +160,7 @@ The company’s success is measured by how much they give back, and so far Doubl
 			
 			<div className="col-md-6 wow fadeInRight">
 				<div className="img ele">
-					<img src={about_row4} className="w-100 transition" alt="" />
+					<img src={Nine} className="w-100 transition" alt="" />
 					<a href={null}>Watch Today Show</a>				</div>
 			</div>
 			
@@ -168,7 +174,7 @@ The company’s success is measured by how much they give back, and so far Doubl
 	<div className="container">
 		<div className="row align-items-center">
 			<div className="col-md-6 wow fadeInLeft res-hide">
-				<img src={about_row5 }className="ele res-full" alt="" />
+				<img src={Eight }className="ele res-full" alt="" width={500} />
 			</div>
 			
 			<div className="col-md-6">

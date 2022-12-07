@@ -18,6 +18,10 @@ import video1 from '../../assets/images/video1.png'
 
 import home_row_5 from '../../assets/images/home_row_5.png'
 import home_row_4 from '../../assets/images/home_row_4.jpg';
+import one from '../../assets/images/product/1.jpg';
+import Three from '../../assets/images/product/3.jpg';
+
+
 const Home = ({ history }) => {
 	var sectionStyle = {
 		backgroundImage: "url(" + { home_row_5 } + ") no-repeat top 20px right"
@@ -41,8 +45,8 @@ const Home = ({ history }) => {
 			<span className="rounded-circle circle12"></span>
 				<div className="box wow fadeIn">
 					<span className="line"></span>
-					<h1 className="hd"><strong className="line_border">Fundraise</strong> from anywhere.</h1>
-					<p className="font-20 mt-3 mb-4">Fundraise with your team, sell ultra-premium cigars, and earn 50% profit. No fundraising minimums or fees.</p>					
+					<h1 className="hd"><strong className="line_border">‘Full-Bodied Fundraising’ </strong> with Cigars for Charity</h1>
+					<p className="font-20 mt-3 mb-4">Join the multitude of Community Organizations and Nonprofits who are adding flavor to their Fundraising!  With a Cigars for Charity Online Fundraising campaign, your organization can provide premium hand rolled Nicaraguan cigars at the click of a button.   You start the fundraiser, register your members, share the link, and let us handle the rest!  Your supporters will receive high quality cigars, and your organization will receive 50% of the profits.</p>					
 					<a href="/" className="btn btn-dark btn-lg">Get Started</a>
 					<img src={line} className="line2" alt=""/>
 				</div>
@@ -286,7 +290,7 @@ const Home = ({ history }) => {
 			
 			<div className="col-md-5 pl-0">
 				<div className="box wow fadeInRight">
-					<img src={home_row_4} className="w-100 ele" alt=""/>				</div>
+					<img src={one} className="w-100 ele" alt=""/>				</div>
 			</div>
 			
 		</div>
@@ -301,7 +305,7 @@ const Home = ({ history }) => {
 		<div className="row">
 			<div className="col-md-5 res-hide pl-4">
 				<div className="box wow fadeInLeft">
-					<img src={home_row_4} className="w-100 ele" alt=""/>				</div>
+					<img src={Three} className="w-100 ele" alt=""/>				</div>
 			</div>
 			
 			<div className="col-md-7">

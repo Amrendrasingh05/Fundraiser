@@ -16,8 +16,15 @@ import {
   saveFundDetailsSaga,
   getFundDetailsSaga,
   getFundDetailByIDSaga,
-  deleteFundDetailByIDSaga
+  deleteFundDetailByIDSaga,
+  saveFundsSaga,
+  addCartSaga,
+  getCartSaga
 } from './event';
+
+import {
+  getProductsSaga,
+} from './product';
 
 export default function* rootSaga() {
   yield all([
@@ -32,6 +39,10 @@ export default function* rootSaga() {
     getFundDetailsSaga(),
     getFundDetailByIDSaga(),
     updateUserDetailSaga(),
-    deleteFundDetailByIDSaga()
+    deleteFundDetailByIDSaga(),
+    getProductsSaga(),
+    saveFundsSaga(),
+    addCartSaga(),
+    getCartSaga()
   ]);
 }

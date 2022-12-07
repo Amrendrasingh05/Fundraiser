@@ -454,6 +454,14 @@ const Footer = ({ history }) => {
                   {user != null ? capitalizeFirstLetter(user[0].firstName) : ""}{" "}
                   {user != null ? capitalizeFirstLetter(user[0].lastName) : ""}
                 </span>
+                <a
+                style={{"color":"black"}}
+                href="/event/checkout"
+                  className="rounded-circle d-flex align-items-center justify-content-center cursor ml-3 after_login_circle open_nav"
+                 
+                >
+                  <i className="ti ti-shopping-cart"></i>
+                </a>
                 <span
                   className="rounded-circle d-flex align-items-center justify-content-center cursor ml-3 after_login_circle open_nav"
                   onClick={openSlider}

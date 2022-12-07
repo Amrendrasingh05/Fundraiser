@@ -33,6 +33,10 @@ import ContactUss from './pages/Home/home2';
 
 import ProtectedRoute from './Protected';
 
+import Funds from './pages/Fund/index'
+import Checkout from './pages/Fund/checkout'
+
+
 
 
 function App() {
@@ -57,6 +61,10 @@ function App() {
       <ProtectedRoute exact path='/event' component={Event}/>
       <ProtectedRoute exact  path='/create-event' component={CreateEvent}/>
       <ProtectedRoute exact  path='/event/details/:id' component={EventDetail}/>
+      <ProtectedRoute exact  path='/event/funds/:id' component={Funds}/>
+      <ProtectedRoute exact  path='/event/checkout' component={Checkout}/>
+
+
 
     </Switch>
   </Router>
