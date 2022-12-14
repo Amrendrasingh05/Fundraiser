@@ -14,17 +14,23 @@ import { useParams } from "react-router-dom";
 const Home = ({ history }) => {
   const dispatch = useDispatch();
   let { id } = useParams();
-
+let CartsDAta = 0;
   const { prodocts } = useSelector((state) => state.product);
-  const { event_id, loading } = useSelector((state) => state.event);
+  const { event_id, loading,data } = useSelector((state) => state.event);
   const { user } = useSelector((state) => state.user);
 
 
+console.log('cart',data);
+const newDate = new Date();
+newDate.setDate(newDate.getDate() + 14);
 
- console.log("sdasdasd",user);
+if(data.length>0){
+	data.map((e,i)=>{
+		CartsDAta =  CartsDAta+ (e['quantity']*e['product_id']['Price'])
+	})
+}
+console.log("daaa",CartsDAta);
 
- console.log(user!=null?user[0].email:"")
- 
   const getCart = () => {
     dispatch(actions.getCartRequest({
       history
@@ -50,10 +56,6 @@ const Home = ({ history }) => {
   }, []);
 
   
-
-console.log('prodcuts',prodocts);
-console.log("darat",event_id);
-
 
   return (
     <>
@@ -100,11 +102,11 @@ console.log("darat",event_id);
 								<div className="form-page p-0">      
 									<h4 className="font-24 mb-3">Contact Information</h4>
 									<div className="form-group">
-									<input type="email" className="input form-control" value={user!=null?user[0].email:""} placeholder="E-mail *"/>
+									<input type="email" className="input form-control" defaultValue={user!=null?user[0].email:""} placeholder="E-mail *"/>
 									</div>
 									
 								<div className="form-group">
-									<input type="text" className="input form-control" value={user!=null?user[0].mobile:""} placeholder="Phone Number *"/>
+									<input type="text" className="input form-control" defaultValue={user!=null?user[0].mobile:""} placeholder="Phone Number *"/>
 									</div>	
 									
 									<br/>
@@ -115,13 +117,13 @@ console.log("darat",event_id);
 								<div className="row">
 									<div className="col-sm-6 pr-1">
 									<div className="form-group">
-									<input type="text" className="input form-control" value={user!=null?user[0].firstName:""} placeholder="First Name*"/>
+									<input type="text" className="input form-control" defaultValue={user!=null?user[0].firstName:""} placeholder="First Name*"/>
 									</div>
 									</div>
 									
 									<div className="col-sm-6 pl-1">
 									<div className="form-group">
-									<input type="text" className="input form-control"  value={user!=null?user[0].lastName:""} placeholder="Last Name*"/>
+									<input type="text" className="input form-control"  defaultValue={user!=null?user[0].lastName:""} placeholder="Last Name*"/>
 									</div>
 									</div>
 								</div>	
@@ -144,12 +146,12 @@ console.log("darat",event_id);
 									</div>
 									</div>
 									
-									<div className="col-sm-6 pl-1 d-flex align-items-center">
+									{/* <div className="col-sm-6 pl-1 d-flex align-items-center">
 										<div className="list-inline-item checkbox2">
 										<input id="checkbox-1" className="checkbox-custom" name="checkbox-group" type="checkbox"/>
 										<label htmlFor="checkbox-1" className="checkbox-custom-label">This is a gift</label>
 									    </div>
-									</div>
+									</div> */}
 								</div>
 								
 								<br/>
@@ -211,39 +213,39 @@ console.log("darat",event_id);
 			<img src={img6} className="w-100"/>
 			
 			<div className="d-flex align-items-center mt-2">
-				<h4 className="font-22">Demo Store <p className="font-14" style={{"color":"#999999"}}>27/11/2021</p></h4>
-				<h4 className="font-22 ml-auto">$250.00</h4>
+				<h4 className="font-22">Demo Store <p className="font-14" style={{"color":"#999999"}}>{new Date().getDate()+"/"+(parseInt(new Date().getMonth())+1)+"/"+new Date().getFullYear()}</p></h4>
+				<h4 className="font-22 ml-auto">${CartsDAta}.00</h4>
 			</div>
 			
 			<div className="d-flex align-items-center">
 				<p className="font-16 mb-2">Subtotal</p>
-				<p className="font-16 ml-auto mb-2">$250.00</p>
+				<p className="font-16 ml-auto mb-2">${CartsDAta}.00</p>
 			</div>
 			
 			<div className="d-flex align-items-center">
 				<p className="font-16 mb-2">Tax</p>
-				<p className="font-16 ml-auto mb-2">$50.00</p>
+				<p className="font-16 ml-auto mb-2">${parseFloat((CartsDAta*18)/100)}</p>
 			</div>
 			
-			<div className="d-flex align-items-center">
+			{/* <div className="d-flex align-items-center">
 				<p className="font-16 mb-2">Shipping</p>
 				<p className="font-16 ml-auto mb-2">$10.00</p>
-			</div>
+			</div> */}
 			
 			<div className="d-flex align-items-center">
-				<p className="font-16 mb-2 font-w-500">Estimated delivery on 14th Sep </p>
+				<p className="font-16 mb-2 font-w-500">Estimated delivery on { newDate.getDate()+"/"+(parseInt(newDate.getMonth())+1)+"/"+newDate.getFullYear()} </p>
 			</div>
 			
 			<div className="d-flex align-items-center">
 				<p className="font-16 mb-2">Total </p>
-				<p className="font-16 ml-auto mb-2">$310.00</p>
+				<p className="font-16 ml-auto mb-2">${CartsDAta+parseFloat((CartsDAta*18)/100)}.00</p>
 			</div>
 			
 			<br/>
-	<div className="list-inline-item checkbox2 m-auto">
+	{/* <div className="list-inline-item checkbox2 m-auto">
 										<input id="checkbox-3" className="checkbox-custom" name="checkbox-group" type="checkbox"/>
 										<label htmlFor="checkbox-3" className="checkbox-custom-label font-14 font-w-500">Don’t display name publicly  in the supporter section</label>
-									    </div>
+									    </div> */}
 			
 			
 		</div>
