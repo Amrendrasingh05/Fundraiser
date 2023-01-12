@@ -54,6 +54,7 @@ function App() {
       <Route exact path='/privacy-policy' component={PrivacyPolicy}/>
       <Route exact path='/contact-us' component={ContactUs}/>
 
+      <Route exact  path='/event/funds/:id' component={Funds}/>
 
 
       <Route exact path='/login' component={Login}/>
@@ -61,7 +62,6 @@ function App() {
       <ProtectedRoute exact path='/event' component={Event}/>
       <ProtectedRoute exact  path='/create-event' component={CreateEvent}/>
       <ProtectedRoute exact  path='/event/details/:id' component={EventDetail}/>
-      <ProtectedRoute exact  path='/event/funds/:id' component={Funds}/>
       <ProtectedRoute exact  path='/event/checkout' component={Checkout}/>
 
 

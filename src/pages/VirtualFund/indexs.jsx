@@ -2,8 +2,7 @@ import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import * as actions from "../../store/actions/events";
-import './style.css';
-import Ind from './Ind.jsx';
+
 import Header from "../Common/header.component";
 import Footer from "../Common/footer.component";
 
@@ -26,15 +25,7 @@ import Six from "../../assets/images/product/12.jpg";
 import Seven from "../../assets/images/product/13.jpg";
 import Eight from "../../assets/images/product/14.jpg";
 import Nine from "../../assets/images/product/16.jpg";
-// import Carousel from "react-bootstrap/Carousel";
-import Carousel from "react-elastic-carousel";
-
-const breakPoints = [
-  { width: 1, itemsToShow: 1 },
-  { width: 550, itemsToShow: 2 },
-  { width: 768, itemsToShow: 3 },
-  { width: 1200, itemsToShow: 4 },
-];
+import Carousel from "react-bootstrap/Carousel";
 
 const Home = ({ history }) => {
   const dispatch = useDispatch();
@@ -221,53 +212,8 @@ const Home = ({ history }) => {
 
           <br></br>
           <br></br>
-          <div className="App">
-            <Carousel breakPoints={breakPoints}>
-              {
-                funds.map((e, i) => {
-                  return (
-                    <Ind key={i}>
-                      <a href={"/event/funds/" + e._id}>
-                        <div className="img">
-                          <img src={store1} className="w-100 transition" />
-                        </div>
 
-                        <div className="p-2 mt-2">
-                          <div className="d-flex align-items-center mb-2">
-                            <span className="d-flex align-items-center font-16 font-w-500">
-                              <i className="ti ti-time mr-2"></i>
-                              {e.EndDate
-                                ? new Date(e.EndDate).getDate() +
-                                "-" +
-                                new Date(e.EndDate).getMonth() +
-                                "-" +
-                                new Date(e.EndDate).getFullYear()
-                                : ""}
-                            </span>
-                            <span className="d-flex align-items-center ml-auto font-16 font-w-650">
-                              <i className="ti ti-user mr-2"></i>{" "}
-                              {e.CreatedBy
-                                ? e.CreatedBy.firstName + " " + e.CreatedBy.lastName
-                                : ""}
-                            </span>
-                          </div>
-
-                          <h3
-                            className="font-18 mb-0 mt-0"
-                            style={{ color: "#000" }}
-                          >
-                            Team Total :{e.RaisedAmount} $
-                          </h3>
-                        </div>
-                      </a>
-                    </Ind>
-                  )
-                })
-              }
-            </Carousel>
-          </div>
-
-          {/* <Carousel className="owl-carousel">
+          <Carousel className="owl-carousel">
             {funds.map((e, i) => {
               return (
                 <Carousel.Item className="box" key={i}>
@@ -307,7 +253,7 @@ const Home = ({ history }) => {
                 </Carousel.Item>
               );
             })}
-          </Carousel> */}
+          </Carousel>
         </div>
       </section>
 
