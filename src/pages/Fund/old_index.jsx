@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, {  useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import * as actions from "../../store/actions/events";
 
@@ -13,8 +13,6 @@ import Footer from "../Common/footer.component";
 
 import { IMAGE_URL } from "../../config/Api";
 
-import arrowImg from './arrow.png'
-
 const Home = ({ history }) => {
   const dispatch = useDispatch();
   let { id } = useParams();
@@ -27,14 +25,14 @@ const Home = ({ history }) => {
     dispatch(actions.getEventDetailRequest({ id }));
   };
 
-
+ 
   const getEvents = () => {
     dispatch(actions.getProductRequest({
       history
     }));
   };
 
-  const AddToCart = (element, id) => {
+  const AddToCart = (element,id)=>{
     dispatch(
       actions.addCartRequest({
         product_id: id,
@@ -52,8 +50,8 @@ const Home = ({ history }) => {
 
   }, []);
 
-  console.log('prodcuts', prodocts);
-  console.log("darat", event_id);
+console.log('prodcuts',prodocts);
+console.log("darat",event_id);
 
 
   return (
@@ -76,7 +74,7 @@ const Home = ({ history }) => {
               style={{ top: "5% !important" }}
             ></span>
             <p className="text-center font-18 font-w-500">
-              This fundraiser ended on {event_id.length == 0 ? "" : event_id[0].EndDate}
+              This fundraiser ended on {event_id.length==0?"":event_id[0].EndDate}
             </p>
             <div className="inner_banner wow fadeInUp">
               <h1 className="hd text-center font-w-500">Md’s Fudraising </h1>
@@ -90,10 +88,10 @@ const Home = ({ history }) => {
           <div className="row">
             <div className="col-md-8 pr-5 part2">
               <div className="pb-5" style={{ borderBottom: "1px solid #000" }}>
-                <h4 className="font-26 mb-2">{event_id.length == 0 ? "" : event_id[0].TeamName}</h4>
+                <h4 className="font-26 mb-2">{event_id.length==0?"":event_id[0].TeamName}</h4>
                 <div className="progress_ mt-4 mb-2"></div>
                 <div className="d-flex align-items-center justify-content-between mt-3">
-                  <h4 className="font-20 font-w-600 m-0">${event_id.length == 0 ? "" : event_id[0].RaisedAmount} / $1,000</h4>
+                  <h4 className="font-20 font-w-600 m-0">${event_id.length==0?"":event_id[0].RaisedAmount} / $1,000</h4>
                   <h4 className="font-200 font-w-600  m-0">Store Closed</h4>
                 </div>
               </div>
@@ -121,23 +119,23 @@ const Home = ({ history }) => {
               </h4>
 
               <br />
-              {
-                prodocts.map((e, i) => {
-                  return (
-                    <div className="box2 d-flex">
+                {
+                  prodocts.map((e,i)=>{
+                    return (
+                      <div className="box2 d-flex">
                       <div className="info">
                         <h5 className="font-16 font-w-600">SET OF {e.Quantity}</h5>
-
+      
                         <h2 className="font-28 font-w-600 mt-3"> {e.Name}</h2>
                         <p className="font-16 font-w-600">
                           {e.Description}
                         </p>
-
+      
                         <h3 className="font-26 font-w-600"> ${e.Price}</h3>
-
+      
                         <div className="d-flex mt-2">
                           <button
-                            onClick={(elemets) => { AddToCart(elemets, e._id) }}
+                            onClick={(elemets)=>{AddToCart(elemets,e._id)}}
                             type="button"
                             className="btn btn-org btn-lg m-auto"
                             style={{ borderRadius: "10px !important" }}
@@ -147,13 +145,13 @@ const Home = ({ history }) => {
                         </div>
                       </div>
                       <div className="img">
-                        <img src={IMAGE_URL + e.Image} className="w-100" />
+                        <img src={IMAGE_URL+e.Image} className="w-100" />
                       </div>
                     </div>
-                  )
-                })
-              }
-
+                    )
+                  })
+                }
+             
 
               <br />
               <br />
@@ -165,7 +163,7 @@ const Home = ({ history }) => {
                 <div className="info">
                   <h4 className="font-w-600">Make a Cigar Donation</h4>
                   <p className="font-22">
-
+                    
                     Send CF cigarn to essential workers 50% of the sale benefits
                     this fundraiser No shipping cost
                   </p>
@@ -194,97 +192,6 @@ const Home = ({ history }) => {
                   </button>
                 </div>
               </div>
-
-              <div className="justify-space mt-5">
-                <h6>Event Leaderboard</h6>
-                <img src={arrowImg} alt="" style={{cursor:"pointer"}}/>
-              </div>
-
-              <div className="leaderboard-box justify-space">
-                <div className="justify-arround" style={{ width: "65%" }}>
-                  <h6>1.</h6>
-                  <div className="round">WW</div>
-                  <h6>Wade Warren</h6>
-                </div>
-
-                <h5>
-                  $ 995
-                </h5>
-              </div>
-
-              <div className="leaderboard-box justify-space">
-                <div className="justify-arround" style={{ width: "65%" }}>
-                  <h6>2.</h6>
-                  <div className="round">CW</div>
-                  <h6>Cameron Willi</h6>
-                </div>
-
-                <h5>
-                  $ 995
-                </h5>
-              </div>
-
-              <div className="leaderboard-box justify-space">
-                <div className="justify-arround" style={{ width: "65%" }}>
-                  <h6>3.</h6>
-                  <div className="round">EH</div>
-                  <h6>Esther Howard</h6>
-                </div>
-
-                <h5>
-                  $ 995
-                </h5>
-              </div>
-
-
-              <h6 className="mt-5">Recent Supporters (27)</h6>
-              <div>
-
-                <div className="leaderboard-box justify-space">
-
-                  <div style={{ maxHeight: "60px" }}>
-                    <h6>ANONYMOUS</h6>
-                    <p className="text-small" style={{ marginTop: "-4%" }}>Blessings to your fundraiser endeavors</p>
-                    <p className="text-secondary text-small" style={{ marginTop: "-2%" }}>2 Months Ago</p>
-                  </div>
-
-                  <h5>
-                    $ 43.00
-                  </h5>
-
-                </div>
-
-                <div className="leaderboard-box justify-space">
-
-                  <div style={{ maxHeight: "60px" }}>
-                    <h6>ANONYMOUS</h6>
-                    <p className="text-small" style={{ marginTop: "-4%" }}>Blessings to your fundraiser endeavors</p>
-                    <p className="text-secondary text-small" style={{ marginTop: "-2%" }}>2 Months Ago</p>
-                  </div>
-
-                  <h5>
-                    $ 43.00
-                  </h5>
-
-                </div>
-                <div className="leaderboard-box justify-space">
-
-                  <div style={{ maxHeight: "60px" }}>
-                    <h6>ANONYMOUS</h6>
-                    <p className="text-small" style={{ marginTop: "-4%" }}>Blessings to your fundraiser endeavors</p>
-                    <p className="text-secondary text-small" style={{ marginTop: "-2%" }}>2 Months Ago</p>
-                  </div>
-
-                  <h5>
-                    $ 43.00
-                  </h5>
-
-                </div>
-
-
-
-              </div>
-
             </div>
           </div>
         </div>

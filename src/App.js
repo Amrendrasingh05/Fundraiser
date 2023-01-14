@@ -35,6 +35,8 @@ import ProtectedRoute from './Protected';
 
 import Funds from './pages/Fund/index'
 import Checkout from './pages/Fund/checkout'
+import Checkoutpaymemt from './pages/Payment_un'
+
 
 
 
@@ -46,6 +48,8 @@ function App() {
       <Route exact path='/' component={Home}/>
 
       <Route exact path='/home' component={ContactUss}/>
+      <Route exact path='/payment' component={Checkoutpaymemt}/>
+
 
       <Route exact path='/about-us' component={About}/>
       <Route exact path='/virtual-fundraising' component={FundRaising}/>

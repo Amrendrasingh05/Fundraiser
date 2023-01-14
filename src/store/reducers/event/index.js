@@ -12,7 +12,9 @@ const initialState = {
     teamMember: false,
     EventAdded: false,
     event_id: [],
-    funds: []
+    funds: [],
+    order:"",
+    payment:""
 };
 
 const reducer = (state = initialState, action) => {
@@ -267,6 +269,35 @@ const reducer = (state = initialState, action) => {
                 };
             case types.GET_CART_FAILED:
                 return { ...state, loading: false, error: action.error };
+
+
+                case types.ADD_ORDER_REQUEST:
+                    return { ...state, loading: true, error: '' };
+        
+                case types.ADD_ORDER_RESPONSE:
+                    return {
+                        ...state,
+                        loading: false,
+                        order: action.response.data,
+                        error: false,
+                        success: true
+                    };
+                case types.ADD_ORDER_FAILED:
+                    return { ...state, loading: false, error: action.error };
+
+                    case types.PAYMENT_DONE_REQUEST:
+                        return { ...state, loading: true, error: '' };
+            
+                    case types.PAYMENT_DONE_RESPONSE:
+                        return {
+                            ...state,
+                            loading: false,
+                            payment: action.response.data,
+                            error: false,
+                            success: true
+                        };
+                    case types.PAYMENT_DONE_FAILED:
+                        return { ...state, loading: false, error: action.error };
 
         default:
             return state;

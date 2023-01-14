@@ -217,6 +217,62 @@ export function* getCartSaga() {
   yield takeLatest(types.GET_CART_REQUEST, getCartAsync);
 }
 
+
+//to add order data
+
+function addOrderApi(data, token) {
+  const headers = {
+    Authorization: token,
+    "Access-Control-Allow-Origin": "*",
+  };
+  return axios.post(`${BASE_URL}fundraiser/add-order`, data, {
+    headers,
+  });
+}
+function* addOrderAsync(action) {
+  try {
+    let token = getToken();
+    let response = yield call(addOrderApi, action.data, token);
+    yield put(actions.addOrderResponse(response.data));
+    successToast('Order Added');
+  } catch (error) {
+    errorToast(error.response?.data.message);
+  }
+}
+
+export function* addOrderSaga() {
+  yield takeLatest(types.ADD_ORDER_REQUEST, addOrderAsync);
+}
+
+
+
+
+//to Payment done
+
+function paymentDoneApi(data, token) {
+  const headers = {
+    Authorization: token,
+    "Access-Control-Allow-Origin": "*",
+  };
+  return axios.post(`${BASE_URL}fundraiser/payment-status`, data, {
+    headers,
+  });
+}
+function* paymentDoneAsync(action) {
+  try {
+    let token = getToken();
+    let response = yield call(paymentDoneApi, action.data, token);
+    yield put(actions.paymentDoneResponse(response.data));
+    successToast('Order Added');
+  } catch (error) {
+    errorToast(error.response?.data.message);
+  }
+}
+
+export function* paymentDoneSaga() {
+  yield takeLatest(types.PAYMENT_DONE_REQUEST, paymentDoneAsync);
+}
+
 function getToken() {
   return localStorage.getItem('fr_token');
 }

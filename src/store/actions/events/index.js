@@ -181,4 +181,44 @@ export const teamNameRequest = (data) => ({
     type: types.GET_CART_FAILED,
     response,
   })
+
+
+  //add to order
+
+  export const addOrderRequest = (data) => ({
+    type: types.ADD_ORDER_REQUEST,
+    data
+  });
+
+
+  export const  addOrderResponse=(response)=>({
+    type: types.ADD_ORDER_RESPONSE,
+    response,
+  })
+
+  
+  export const  addOrderFaild=(response)=>({
+    type: types.ADD_ORDER_FAILED,
+    response,
+  })
+
+
+    //PAYMENT DONE
+
+    export const paymentDoneRequest = (data) => ({
+      type: types.PAYMENT_DONE_REQUEST,
+      data
+    });
+  
+  
+    export const  paymentDoneResponse=(response)=>({
+      type: types.PAYMENT_DONE_RESPONSE,
+      response,
+    })
+  
+    
+    export const  paymentDoneFaild=(response)=>({
+      type: types.PAYMENT_DONE_FAILED,
+      response,
+    })
   

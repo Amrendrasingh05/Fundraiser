@@ -19,7 +19,9 @@ import {
   deleteFundDetailByIDSaga,
   saveFundsSaga,
   addCartSaga,
-  getCartSaga
+  getCartSaga,
+  addOrderSaga,
+  paymentDoneSaga
 } from './event';
 
 import {
@@ -43,6 +45,8 @@ export default function* rootSaga() {
     getProductsSaga(),
     saveFundsSaga(),
     addCartSaga(),
-    getCartSaga()
+    getCartSaga(),
+    addOrderSaga(),
+    paymentDoneSaga()
   ]);
 }
