@@ -20,7 +20,7 @@ const Home = ({ history }) => {
   let { id } = useParams();
 
   const { prodocts } = useSelector((state) => state.product);
-  const { event_id, loading } = useSelector((state) => state.event);
+  const { event_id, loading,users } = useSelector((state) => state.event);
 
 
   const getEventss = () => {
@@ -34,10 +34,11 @@ const Home = ({ history }) => {
     }));
   };
 
-  const AddToCart = (element, id) => {
+  const AddToCart = (element, product_id) => {
     dispatch(
       actions.addCartRequest({
-        product_id: id,
+        product_id: product_id,
+        fundraiser_id:id
       })
     );
   }
@@ -54,11 +55,13 @@ const Home = ({ history }) => {
 
   console.log('prodcuts', prodocts);
   console.log("darat", event_id);
+  console.log('users',users);
 
 
   return (
     <>
       <SideBar />
+      
       <section className="home_banner mover virtual_fundraising_banner mover career">
         <div className="container">
           <img
@@ -124,7 +127,7 @@ const Home = ({ history }) => {
               {
                 prodocts.map((e, i) => {
                   return (
-                    <div className="box2 d-flex">
+                    <div className="box2 d-flex" key={i}>
                       <div className="info">
                         <h5 className="font-16 font-w-600">SET OF {e.Quantity}</h5>
 
@@ -199,42 +202,25 @@ const Home = ({ history }) => {
                 <h6>Event Leaderboard</h6>
                 <img src={arrowImg} alt="" style={{cursor:"pointer"}}/>
               </div>
-
-              <div className="leaderboard-box justify-space">
+              {
+                users.map((e,i)=>{
+                  return (
+<div className="leaderboard-box justify-space">
                 <div className="justify-arround" style={{ width: "65%" }}>
-                  <h6>1.</h6>
-                  <div className="round">WW</div>
-                  <h6>Wade Warren</h6>
+                  <h6>{i+1}</h6>
+                  <div className="round">{e.first_name.charAt(0).toUpperCase()}{e.last_name.charAt(0).toUpperCase()}</div>
+                  <h6>{e.first_name.charAt(0).toUpperCase() + e.first_name.slice(1)} {e.last_name.charAt(0).toUpperCase() + e.last_name.slice(1)}</h6>
                 </div>
 
                 <h5>
-                  $ 995
+                  $ {parseFloat(e.amount)}
                 </h5>
               </div>
+                  )
+                })
+              }
+              
 
-              <div className="leaderboard-box justify-space">
-                <div className="justify-arround" style={{ width: "65%" }}>
-                  <h6>2.</h6>
-                  <div className="round">CW</div>
-                  <h6>Cameron Willi</h6>
-                </div>
-
-                <h5>
-                  $ 995
-                </h5>
-              </div>
-
-              <div className="leaderboard-box justify-space">
-                <div className="justify-arround" style={{ width: "65%" }}>
-                  <h6>3.</h6>
-                  <div className="round">EH</div>
-                  <h6>Esther Howard</h6>
-                </div>
-
-                <h5>
-                  $ 995
-                </h5>
-              </div>
 
 
               <h6 className="mt-5">Recent Supporters (27)</h6>

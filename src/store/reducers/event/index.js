@@ -12,6 +12,8 @@ const initialState = {
     teamMember: false,
     EventAdded: false,
     event_id: [],
+    users: [],
+
     funds: [],
     order:"",
     payment:""
@@ -190,6 +192,7 @@ const reducer = (state = initialState, action) => {
                 ...state,
                 loading: false,
                 event_id: action.response.data,
+                users:action.response.users,
                 error: false,
                 success: true,
                 isTeam: null,

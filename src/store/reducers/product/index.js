@@ -5,6 +5,7 @@ const initialState = {
     error: null,
     success: null,
     prodocts: [],
+
     
 };
 
@@ -18,6 +19,7 @@ const reducer = (state = initialState, action) => {
                 ...state,
                 loading: false,
                 prodocts: action.response.data,
+
                 error: false,
                 success: true,
             };
