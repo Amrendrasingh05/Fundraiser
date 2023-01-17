@@ -8,12 +8,17 @@ import { ToastContainer } from "react-toastify";
 import arrowright from "../../assets/images/arrow-right.png";
 import img6 from "../../assets/images/img6.png";
 import { errorToast } from "../../utils/toast/index";
-
+import '../../App.css'
 import { useParams } from "react-router-dom";
 let clientKey =
   "5FcB6WrfHGS76gHW3v7btBCE3HuuBuke9Pj96Ztfn5R32G5ep42vne7MCWZtAucY";
 let apiLoginId = "5KP3u95bQpv";
 const Home = ({ history }) => {
+
+  const StyledFormComponent = (props) => ( 
+  <FormComponent className="styledForm" {...props}/> )
+
+
   const onSuccessHandler = (data) => {
     console.log(data);
 	dispatch(
@@ -72,6 +77,8 @@ const Home = ({ history }) => {
       );
     }
   };
+
+  
 
   console.log("cart", data);
   console.log("order",order)
@@ -136,8 +143,8 @@ const Home = ({ history }) => {
 
       <div className="checkout">
         <div className="container">
-          <div className="d-flex">
-            <a href="/" className="btn back">
+          <div className="d-flex ">
+            <a href="/" className="btn back primary-bg">
               <i className="fa fa-arrow-left" aria-hidden="true"></i> Back to
               home
             </a>
@@ -267,21 +274,26 @@ const Home = ({ history }) => {
                         </div>
                       </div>
                     </div>
+                    <br />
                     <div
                       style={{
-                        display: CheckoutBtn === false ? "none" : "block",
+                        display: CheckoutBtn === false ? "none" :"block"
                       }}
+                      className="add-card-box"
                     >
+                      {/* CheckoutBtn === false ? "none" :  */}
                       <FormContainer
+                        // className="add-card-box"
                         environment="sandbox"
                         onError={onErrorHandler}
                         onSuccess={onSuccessHandler}
                         amount={CartsDAta + parseFloat((CartsDAta * 18) / 100)}
-                        component={FormComponent}
+                        component={StyledFormComponent}
                         clientKey={clientKey}
                         apiLoginId={apiLoginId}
                       />
                     </div>
+                    
 
                     <br />
 
@@ -292,10 +304,10 @@ const Home = ({ history }) => {
                     >
                       <button
                         type="button"
-                        className="btn btn_step back btn-lg ml-auto"
+                        className="btn btn_step back btn-lg ml-auto primary-bg"
                         onClick={CheckOutBn}
                       >
-                        Checkout
+                        Checkout &nbsp;
                         <i className="fa fa-arrow-right" aria-hidden="true"></i>
                       </button>
                     </div>

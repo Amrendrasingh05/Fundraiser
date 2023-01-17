@@ -49,3 +49,30 @@
 .text-small{
   font-size: 10px;
 }
+.input{
+  border:1px solid rgba(206, 206, 206, 0.507);
+}
+/* .add-card-box{
+  background: red !important;
+} */
+.styledForm { 
+  font-family: "Cutive Mono"; 
+  background-color: white !important; 
+  color: black !important; 
+  border: 1px solid rgb(186, 186, 186);
+  border-radius: 10px;
+}
+.styledForm div div{
+  background: #ffffff !important;
+  color: rgb(0, 0, 0);
+}
+.styledForm div button{
+  background: #f1a501;
+  border: 0;
+  color: white;
+}
+.primary-bg{
+  background: #f1a501;
+  border: 0;
+  color: white;
+}
