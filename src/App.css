@@ -65,6 +65,8 @@
 .styledForm div div{
   background: #ffffff !important;
   color: rgb(0, 0, 0);
+  margin-left: -7%;
+  /* width: 230px !important; */
 }
 .styledForm div button{
   background: #f1a501;

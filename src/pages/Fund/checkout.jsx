@@ -277,7 +277,7 @@ const Home = ({ history }) => {
                     <br />
                     <div
                       style={{
-                        display: CheckoutBtn === false ? "none" :"block"
+                        display: "block"
                       }}
                       className="add-card-box"
                     >
